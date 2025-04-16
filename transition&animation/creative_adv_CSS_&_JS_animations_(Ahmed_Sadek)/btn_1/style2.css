@@ -1,0 +1,48 @@
+/* 3rd type */
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateX(
+    90deg
+  ); /* 90deg rotation on X-axis mmakes it invisible. As you can only see the thickness and thickness is 0. */
+  z-index: -1; /* z-index: -1 makes it behind the text. */
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateY(
+    90deg
+  ); /* 90deg rotation on Y-axis mmakes it invisible. As you can only see the thickness and thickness is 0. */
+  z-index: -1;
+}
+
+/* these two crteate the look like four boxes are being removed. but actually there are two lines (one horizontal and one vertical) that are made visible. */
+a:hover:before {
+  transform: rotateX(
+    0
+  ); /* makes the horizontal line raotate and become visible. */
+}
+
+a:hover:after {
+  transform: rotateY(
+    0
+  ); /* makes the vertical line raotate and become visible. */
+}
+
+a:hover {
+  color: white;
+}
