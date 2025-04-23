@@ -18,12 +18,16 @@ section {
 }
 
 section h2 {
-  font-size: 24vw;
+  font-size: 22vw;
   text-transform: uppercase;
   font-weight: 900;
   line-height: 1em;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* ei property ta mathar upor diye gelo. h2 er height, width er modde na fixed thakar kotha? kintu puro section e cover hoye, fixed hoye thakche. 
+  
+  Accha, I guess jeta hocche, h2 er background image hisebe e ache but height, width nicche full page er, section er na. jate full page e image scroll na hoi. Karon section er padding onek bariye dileo dekha jai, image same jaigatei ache. Tar mane   background-attachment: fixed;
+ asole full viewport e cover kore dei image take. jate setak scroll na hote hoi.*/
   background-attachment: fixed;
 }
 
