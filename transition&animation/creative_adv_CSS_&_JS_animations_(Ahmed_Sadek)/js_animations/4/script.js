@@ -1,7 +1,7 @@
 let section = document.querySelector('section');
 let j = 0;
 
-while(j < 200) {
+while(j < 250) {
     let star = document.createElement('i');
     let x = Math.floor(Math.random() * window.innerWidth);
     star.style.left = `${x}px`;
